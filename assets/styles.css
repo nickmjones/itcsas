@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+:root {
+	--header-text: 'Bebas Neue', Helvetica, Arial, sans-serif;
+	--body-text: 'Fraunces', Georgia, Times, serif;
+	--color-yellow: #f1faee;
+	--color-red: #e63946;
+	--color-ltblue: #a8dadc;
+}
+
+/* Setup
+--------------------------------------*/
+
+html {
+	font-size: 16px;
+}
+body * {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f1faee;
+	font-family: var(--body-text);
+	color: #444;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: var(--header-text);
+	margin: 0;
+}
+
+p {
+	font-size: 2.4rem;
+	line-height: 2.76rem;
+}
+
+h1.xxl {
+	text-transform: uppercase;
+	letter-spacing: -0.07rem;
+	font-size: 25vw;
+	color: var(--color-red);
+}
+
+/* Elements
+--------------------------------------*/
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	text-align: center;
+}
+
+.see-more {
+	width: 80%;
+	backface-visibility: visible;
+	perspective-origin: 150% 150%;
+	transform-style: preserve-3d;
+	perspective: 40px;
+	margin: auto;
+	text-align: center;
+	padding: 1rem 2rem;
+	font-size: 1.4rem;
+	font-family: var(--header-text);
+	background-color: var(--color-red);
+	color: rgba(255,255,255,0.6);
+	border-radius: 2px;
+	box-shadow: 12px 12px 0 1px #ccc;
+}
+.see-more a {
+	color: rgba(255,255,255,0.8);
+	text-decoration: none;
+	font-size: 150%;
+}
+
+article {
+	width: 60%;
+	margin: auto;
+}
+
+.actions {
+	padding: 3rem 0;
+	margin-bottom: 4rem;
+}
+
+footer {
+	font-size: 1rem;
+	background: #fff;
+	padding: 2rem;
+	text-align: center;
+}
+
+@media screen and (min-width: 400px) {
+	
+	.intro {
+		height: 50vh;
+	}
+	article {
+		width: 90%;
+	}
+	
+	p {
+		font-size: 2rem;
+		line-height: 2.46rem;
+	}
+}
